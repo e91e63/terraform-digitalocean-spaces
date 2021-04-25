@@ -1,9 +1,9 @@
 variable "name" {
   default = "k8s"
-  type = string
+  type    = string
 }
 
 variable "do_conf" {
   default = {}
-  type    = object({})
+  type    = any
 }
