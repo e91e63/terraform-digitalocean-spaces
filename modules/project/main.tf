@@ -1,7 +1,7 @@
-resource "digitalocean_project" "this" {
-  name        = var.name
+resource "digitalocean_project" "main" {
   description = var.description
-  purpose     = var.purpose
   environment = var.environment
-  resources   = ["digitalocean_spaces_bucket.info_store.urn"]
+  name        = var.name
+  purpose     = var.purpose
+  resources   = var.resources
 }

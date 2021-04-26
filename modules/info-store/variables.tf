@@ -1,5 +1,4 @@
 variable "name" {
-  default = "k8s"
   type    = string
 }
 

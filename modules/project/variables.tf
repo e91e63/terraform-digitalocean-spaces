@@ -1,10 +1,19 @@
-variable "name" {
-  default = "k8s"
-  type    = string
+variable "description" {
+  type = string
 }
 
-variable "do_conf" {
-  type = object({
-    region = string
-  })
+variable "environment" {
+  type = string
+}
+
+variable "name" {
+  type = string
+}
+
+variable "purpose" {
+  type = string
+}
+
+variable "resources" {
+  type = list(string)
 }
