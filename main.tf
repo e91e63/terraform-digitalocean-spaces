@@ -1,12 +1,15 @@
 module "info_store" {
   source = ".//modules/info-store"
 
-  name    = var.name
   do_conf = var.do_conf
+  name    = var.name
 }
 
 module "project" {
   source = ".//modules/project"
 
-  name = var.name
+  description = "Infrastructure"
+  environment = "Production"
+  name        = var.name
+  purpose     = "Operational / Developer tooling"
 }
