@@ -3,4 +3,7 @@ resource "digitalocean_spaces_bucket" "main" {
   force_destroy = false
   name          = var.name
   region        = var.do_conf.region
+  versioning {
+    enabled = true
+  }
 }

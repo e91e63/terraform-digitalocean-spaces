@@ -1,7 +1,18 @@
+locals {
+  do_conf_default = {
+    region                 = "sfo2"
+  }
+
+  do_conf_merged = merge(
+    local.do_conf_default,
+    var.do_conf,
+  )
+}
+
 module "info_store" {
   source = ".//modules/info-store"
 
-  do_conf = var.do_conf
+  do_conf = local.do_conf_merged
   name    = var.name
 }
 
