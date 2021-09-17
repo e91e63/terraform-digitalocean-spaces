@@ -1,6 +1,6 @@
 locals {
   do_conf_default = {
-    region                 = "sfo2"
+    region = "sfo2"
   }
 
   do_conf_merged = merge(
