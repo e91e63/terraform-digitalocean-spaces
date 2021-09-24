@@ -3,5 +3,4 @@ resource "digitalocean_project" "main" {
   environment = var.environment
   name        = var.name
   purpose     = var.purpose
-  resources   = var.resources
 }

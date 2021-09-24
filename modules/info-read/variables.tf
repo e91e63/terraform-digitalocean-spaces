@@ -1,7 +1,7 @@
 variable "info_conf" {
   type = object({
-    bucket = string
-    key    = string
-    region = string
+    bucket_name = string
+    key         = string
+    region      = string
   })
 }

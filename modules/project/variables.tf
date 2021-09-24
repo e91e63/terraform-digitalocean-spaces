@@ -13,7 +13,3 @@ variable "name" {
 variable "purpose" {
   type = string
 }
-
-variable "resources" {
-  type = list(string)
-}
