@@ -1,15 +1,8 @@
-variable "description" {
-  type = string
-}
-
-variable "environment" {
-  type = string
-}
-
-variable "name" {
-  type = string
-}
-
-variable "purpose" {
-  type = string
+variable "project_conf" {
+  type = object({
+    description = string
+    environment = string
+    name        = string
+    purpose     = string
+  })
 }

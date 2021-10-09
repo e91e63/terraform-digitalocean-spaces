@@ -1,6 +1,6 @@
 resource "digitalocean_project" "main" {
-  description = var.description
-  environment = var.environment
-  name        = var.name
-  purpose     = var.purpose
+  description = var.project_conf.description
+  environment = var.project_conf.environment
+  name        = var.project_conf.name
+  purpose     = var.project_conf.purpose
 }
