@@ -1,8 +1,11 @@
-variable "name" {
-  type = string
+variable "project_info" {
+  type = object({
+    id   = string
+    name = string
+  })
 }
 
-variable "do_conf" {
+variable "bucket_conf" {
   type = object({
     region = string
   })
