@@ -5,6 +5,5 @@ terraform {
       version = "~> 2"
     }
   }
-
   required_version = "~> 1"
 }
