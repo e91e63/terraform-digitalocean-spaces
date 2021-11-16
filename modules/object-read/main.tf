@@ -3,3 +3,13 @@ data "digitalocean_spaces_bucket_object" "main" {
   key    = var.info_conf.key
   region = var.info_conf.region
 }
+
+terraform {
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2"
+    }
+  }
+  required_version = "~> 1"
+}

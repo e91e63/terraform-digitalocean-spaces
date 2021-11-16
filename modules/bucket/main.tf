@@ -14,3 +14,13 @@ resource "digitalocean_spaces_bucket" "main" {
     enabled = true
   }
 }
+
+terraform {
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2"
+    }
+  }
+  required_version = "~> 1"
+}
