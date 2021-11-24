@@ -1,3 +1,13 @@
+terraform {
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2"
+    }
+  }
+  required_version = "~> 1"
+}
+
 resource "digitalocean_project_resources" "main" {
   project = var.project_info.id
   resources = [
@@ -13,14 +23,4 @@ resource "digitalocean_spaces_bucket" "main" {
   versioning {
     enabled = true
   }
-}
-
-terraform {
-  required_providers {
-    digitalocean = {
-      source  = "digitalocean/digitalocean"
-      version = "~> 2"
-    }
-  }
-  required_version = "~> 1"
 }
